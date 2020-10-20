@@ -1,0 +1,27 @@
+GET http://localhost:3000/subscribers
+
+###
+GET http://localhost:3000/subscribers/c249c2b9-ec1c-4f30-b760-bb2dcd88a209
+
+###
+
+POST http://localhost:3000/subscribers
+
+{
+    "name" : "larryamazing",
+    "subscribedToChannel" : "Web Dev Simplified"
+}
+
+
+###
+
+PATCH http://localhost:3000/subscribers/c249c2b9-ec1c-4f30-b760-bb2dcd88a209
+Content-Type: application/json
+
+{
+    "name" : "leamazing",
+    "subscribedToChannel" : "Web Dev Simplified"
+}
+
+####
+DELETE http://localhost:3000/subscribers/c249c2b9-ec1c-4f30-b760-bb2dcd88a209
